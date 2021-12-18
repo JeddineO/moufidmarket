@@ -1,0 +1,416 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background: white top left;
+    background-size:  100% auto;
+    background-blend-mode:darken;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    
+    
+   
+}
+
+a{
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+    padding-left: 0px;
+    height: 30px;
+    background-color:#fff;
+    width: 100%;
+    z-index: 5;
+}
+.logo{
+    height: 150px;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    top: 4px;
+    z-index: 1;
+}
+@media (max-width:728px) {
+    header{height: auto; padding: ;}
+    #logo1{display: none;}
+    .logo{
+
+        position: fixed;
+        top: 10PX;
+        left: 0;
+    }
+    header ul li{
+        display:list-item;
+        text-align: center;
+        padding: 10;
+        margin-top: 50px;
+        
+        
+    }
+    
+}
+
+.imagephone{
+    display: none;
+}
+
+
+
+.nav-area{
+    
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    padding: 0px 15px;
+    font-size: x-large;
+}
+ul li a{
+  
+    color:black;
+    font-weight:700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+ul li a:hover{
+    cursor: pointer;
+    color:rgb(221, 36, 36);
+    padding-bottom: 5px;
+    border-bottom: solid 2px #7a7071;
+
+}
+ul li a[active]{
+    cursor: pointer;
+    color:rgb(221, 36, 36);
+    padding-bottom: 5px;
+    border-bottom: solid 2px rgb(221, 36, 36);
+
+}
+
+
+.btn-area{
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding:    5px 20px;
+    border-radius: 5px;
+    background: #7a7071;
+}
+#mypict{
+    padding-left: 100px;
+    
+}
+#mypict img{
+    height: 70vh;
+}
+main{
+    height: auto;
+   
+    
+}
+main div h1{
+    color:rgb(221, 36, 36);
+    font-weight: 500;
+    font-family:sans-serif;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+main div  p{
+    color: #000;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+#text{
+    background: rgba(255, 255, 255, 0.356);
+    margin-top: 100px;
+    font-size: large;
+    font-weight:bolder;
+    border-radius: 20px;
+}
+#text span{
+    font-size:x-large;
+    color: #050505;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#text-box{
+    color: #fff;
+    bottom: 8%;
+    padding-left: 35px;
+    margin-top: 140px;
+    font-size: large;
+}
+
+#horaire{
+    animation: loade 2s infinite ease;
+}
+#text-box p
+{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 30px;
+    color: #6b695b;
+    
+}
+
+p i{
+    font-size: 30px;
+    padding-right: 10px;
+    color: #fff;
+    animation: loader 2s infinite ease;
+}
+ .rendez{
+    height: auto;
+    width: auto;
+    background: #6b695b;
+    color:#fff;
+    font-weight: 600;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 60px;
+    margin-left:250px;
+}
+.rendez:hover{
+    border: solid 2px #000;
+}
+ i{
+    padding: 8px;
+    
+   
+}
+
+#text-box h1{
+    font-size: 90px;
+    line-height: 160px;
+    margin-left: -10px;
+}
+footer{
+    background: #000;
+    margin: 0;
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-weight: 200;
+    padding: 40px 0px;
+    
+    
+}
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    display: inline-block;
+    
+    color: #fff;
+    
+
+}
+footer ul li a{
+    color:aqua;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+
+}
+footer ul li a:hover{
+    color: rgb(151, 170, 170);
+    border: none;
+    font-weight: bold;
+}
+
+
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+  }
+  #load {
+    display: inline-block;
+    
+    position: relative;                    
+    animation: loader 2s infinite ease;
+  }
+  @keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+  }
+ 
+
+
+  .cabinet{
+      background: #fff;
+      padding: 10px;
+      padding-top: 120PX;
+      font-size:large;
+      font-family:libre baskerville,serif;
+      color: #000;
+      height: auto;
+  }
+  .cabinet h3
+  {
+    padding-left: 80px;
+      
+      border-bottom: solid 5px #6b695b ;
+  }
+  
+  .cabinet a{
+      color: #6b695b;
+      font-size: x-large;
+      font-weight: 500;
+  }
+  .contact {
+
+    background: #fff;
+      padding: 10px;
+      padding-top: 120PX;
+      font-size:large;
+      font-family:libre baskerville,serif;
+      color: #000;
+      height: auto;
+  }
+  .contact span{
+      font-size: xx-large;
+      color: #6b695b;
+      padding-bottom: 8px;
+      padding-left: 0px;
+  }
+  .contact h3
+  {
+      padding-left: 80px;
+      
+      border-bottom: solid 5px #6b695b ;
+  }
+  .contact h6 i{
+      padding-right: 16px;
+      font-size: large;
+      color: #000;
+      background:rgba(192, 176, 176, 0.582);
+      width: 45PX;
+      text-align: center;
+      height: fit-content;
+      padding: 10PX;
+      border-radius: 100%;
+  }
+  .contact h6{
+      font-size: medium;
+      color: #8a8774;
+    
+  }
+  .honoraires{
+    background: #fff;
+    padding: 10px;
+    padding-top: 120PX;
+    font-size:large;
+    font-family:libre baskerville,serif;
+    color: #000;
+    height: auto;
+  }
+  .honoraires h3
+  {
+    padding-left: 80px;
+      
+      border-bottom: solid 5px #6b695b ;
+  }
+  .honoraires h6{
+      text-align: center;
+      background-color:#6b695b ;
+      font-size: x-large;
+      padding: 3px;
+      border-radius: 5px;
+  }
+  .honoraires div
+  {
+      font-size: medium;
+      font-weight: 600;
+      
+      
+      
+  }
+  body{
+    font-family:libre baskerville,serif;
+  }
+  h3 i{
+      color: #6b695b;
+  }
+  .rdv{
+      color: #fff;
+      float: right;
+      font-size: xx-large;
+  }
+  .rdv:hover{
+      color: #6b695b;
+  }
+
+  .nv-tel{
+      background: #fff;
+      position: fixed;
+      bottom: 0;
+      z-index: 10;
+      height: fit-content;
+      width: 100%;
+      text-align: center;
+      display: none;
+  }
+  #toggle{
+    
+      background: #fff;
+      border: none;
+      text-align:left;
+      color: #6b695b;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      display: none;
+  }
+  @media (max-width:728px) {
+      #toggle{display: block;}
+        header{display: none; }
+    .nav-area{display: block;}
+    body{background: none;}
+    .imagephone{display: block;}
+    .nv-tel{display: block;}
+}
+  @media (max-width:728px) {
+
+    #logo{display: none;}
+    #text-box h6{display: none;}
+    #acceuil p{font-size: 10px; padding: auto;}
+    main{height: auto;}
+    
+}
+@media (max-width:728px) {
+
+    #text-box{ margin-top: 50px;}
+    #text-box p{padding: 0;padding-top: 10px;font-size: 18px;} 
+    .rdv{color: #000;}
+    
+}
